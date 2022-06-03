@@ -9,6 +9,7 @@ It runs on [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedoc
 - Clone this repo and make a root-level directory called `data` that includes the folllowing files:
   - [`commodities.json`](user-content-data-commodities-json)
   - [`ft-commodities-articles.txt`](user-content-ft-commodities-articles-txt)
+  - [`ft-commodities-articles-test.txt`](user-content-ft-commodities-articles-test-txt)
 - Install the Jupyter Notebook App by downloading [Anaconda Distribution](https://www.anaconda.com/products/distribution), which is a common scientific python distribution (and which also includes scientific python packages)
 - Run (from the root-level of this repo): `$ jupyter notebook` - this wil open the notebook on [http://localhost:8888/tree](http://localhost:8888/tree)
 
@@ -16,7 +17,7 @@ It runs on [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedoc
 ## Creating training and validation datasets
 - Click the `commodities.ipynb` file to open this kernel on [http://localhost:8888/notebooks/commodities.ipynb](http://localhost:8888/notebooks/commodities.ipynb)
 - Run each of the cells in order from top to bottom, which will create the following files in the `data` directory:
-  - `commodities_data.json`: commodities identified in each article (non-essential for training the model)
+  - `commodities_data.json`: commodities identified in each article (non-essential for training the NER model)
   - `commodities_training_data.json` (used by spaCy v2)
   - `commodities_training_data.spacy` (used by spaCy v3)
   - `commodities_validation_data.json` (used by spaCy v2)
@@ -79,6 +80,17 @@ It will also create an `output` root-level directory which contains `model-best`
 ```
 
 
+## Creating test dataset
+- Click the `commodities-create-test-data.ipynb` file to open this kernel on [http://localhost:8888/notebooks/commodities-create-test-data.ipynb](http://localhost:8888/notebooks/commodities-create-test-data.ipynb)
+- Run each of the cells in order from top to bottom, which will create the following file in the `data` directory:
+  - `commodities_test_data.json`: body text segments that have not been used to train/validate the NER model that can be used to test the NER model
+
+
+## Conducting an informal NER model test
+- Click the `commodities-test-informal.ipynb` file to open this kernel on [http://localhost:8888/notebooks/commodities-test-informal.ipynb](http://localhost:8888/notebooks/commodities-test-informal.ipynb)
+- Run each of the cells in order from top to bottom, which in the final cell will test the specified item from the test data against the NER model
+
+
 ## Sample file extracts
 
 #### `data/commodities.json`
@@ -103,7 +115,7 @@ It will also create an `output` root-level directory which contains `model-best`
 #### `data/ft-commodities-articles.txt`
 - Each line should contain an article, starting with its UUID, followed by triple pipes, followed by the body text split into segments delineated by double pipes (I chose to delineate segments based on where line breaks occurred)
 - The file should not end with an empty newline
-- My first attempt used 400 unique articles: 10 articles for each of the 40 commodities
+- My first attempt used 400 unique articles: 10 articles for each of the 40 commodities (though each article may potentially mention multiple commodities)
 - I chose articles that mentioned the commodity in contexts that would clearly define it as such, e.g. "aluminium traders", "US producers of corn-based ethanol", "cobalt and molybdenum futures contracts", etc.
 - I tried to avoid articles that included homonyms of the name of the commodity, e.g.
   - amber -> Amber Rudd: former British politician
@@ -116,6 +128,11 @@ It will also create an `output` root-level directory which contains `model-best`
 …
 aa1e07d2-0a30-41cd-b146-b730ea5467ad|||At vero eos et accusamus…||Et harum quidem…||Nam libero tempore.
 ```
+---
+
+#### `data/ft-commodities-articles-test.txt`
+- This file follows the same format as used for [`ft-commodities-articles.txt`](user-content-ft-commodities-articles-txt)
+- My first attempt used 40 unique articles; one article for each of the 40 commodities, plus another 12 articles that include occurrences of the sorts of homonyms mentioned above
 
 
 ## References
@@ -131,6 +148,7 @@ aa1e07d2-0a30-41cd-b146-b730ea5467ad|||At vero eos et accusamus…||Et harum qui
   - [How to Train a spaCy NER model (Named Entity Recognition for DH 04 | Part 03)](https://www.youtube.com/watch?v=7Z1imsp6g10) (04 Dec 2020)
   - [How to Convert spaCy 2x Training Data to 3x (Named Entity Recognition in spaCy Tutorials)](https://www.youtube.com/watch?v=TKoPva69_6E) (12 Apr 2021)
   - [How to Create a Config.cfg File in spaCy 3x for Named Entity Recognition (NER)](https://www.youtube.com/watch?v=l67PXnhu0ig) (14 Apr 2021)
+  - [How to Structure an Informal NER Test with spaCy 3 (Named Entity Recognition Tutorials)](https://www.youtube.com/watch?v=SJeDvHKHN_k) (16 May 2021)
   - [How to Train an NER Model in spaCy 3x](https://www.youtube.com/watch?v=PJZzBp6em-Q) (07 May 2021)
 - [GitHub: wjbmattingly (William Mattingly)](https://github.com/wjbmattingly)
   - [spacy_3_ner_tutorials](https://github.com/wjbmattingly/spacy_3_ner_tutorials)
