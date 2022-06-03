@@ -7,9 +7,9 @@ It runs on [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedoc
 
 ## Setup
 - Clone this repo and make a root-level directory called `data` that includes the folllowing files:
-  - [`commodities.json`](user-content-data-commodities-json)
-  - [`ft-commodities-articles.txt`](user-content-ft-commodities-articles-txt)
-  - [`ft-commodities-articles-test.txt`](user-content-ft-commodities-articles-test-txt)
+  - [`commodities.json`](#datacommoditiesjson)
+  - [`ft-commodities-articles.txt`](#dataft-commodities-articlestxt)
+  - [`ft-commodities-articles-test.txt`](#dataft-commodities-articles-testtxt)
 - Install the Jupyter Notebook App by downloading [Anaconda Distribution](https://www.anaconda.com/products/distribution), which is a common scientific python distribution (and which also includes scientific python packages)
 - Run (from the root-level of this repo): `$ jupyter notebook` - this wil open the notebook on [http://localhost:8888/tree](http://localhost:8888/tree)
 
@@ -131,7 +131,7 @@ aa1e07d2-0a30-41cd-b146-b730ea5467ad|||At vero eos et accusamus…||Et harum qui
 ---
 
 #### `data/ft-commodities-articles-test.txt`
-- This file follows the same format as used for [`ft-commodities-articles.txt`](user-content-ft-commodities-articles-txt)
+- This file follows the same format as used for [`ft-commodities-articles.txt`](#dataft-commodities-articlestxt)
 - My first attempt used 40 unique articles; one article for each of the 40 commodities, plus another 12 articles that include occurrences of the sorts of homonyms mentioned above
 
 
