@@ -14,10 +14,15 @@ It runs on [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedoc
 - Run (from the root-level of this repo): `$ jupyter notebook` - this wil open the notebook on [http://localhost:8888/tree](http://localhost:8888/tree)
 
 
-## Creating training and validation datasets
-- Click the `commodities.ipynb` file to open this kernel on [http://localhost:8888/notebooks/commodities.ipynb](http://localhost:8888/notebooks/commodities.ipynb)
+## Creating entities per article dataset
+- Click the `create-entities-per-article-data.ipynb` file to open this kernel on [http://localhost:8888/notebooks/create-entities-per-article-data.ipynb](http://localhost:8888/notebooks/create-entities-per-article-data.ipynb)
 - Run each of the cells in order from top to bottom, which will create the following files in the `data` directory:
-  - `commodities_data.json`: commodities identified in each article (non-essential for training the NER model)
+  - `commodities_entities_per_article_data.json`: commodities identified in each article (non-essential for training the NER model)
+
+
+## Creating training and validation datasets
+- Click the `create-training-validation-data.ipynb` file to open this kernel on [http://localhost:8888/notebooks/create-training-validation-data.ipynb](http://localhost:8888/notebooks/create-training-validation-data.ipynb)
+- Run each of the cells in order from top to bottom, which will create the following files in the `data` directory:
   - `commodities_training_data.json` (used by spaCy v2)
   - `commodities_training_data.spacy` (used by spaCy v3)
   - `commodities_validation_data.json` (used by spaCy v2)
