@@ -95,6 +95,10 @@ It will also create an `output` root-level directory which contains `model-best`
 - Click the `commodities-test-informal.ipynb` file to open this kernel on [http://localhost:8888/notebooks/commodities-test-informal.ipynb](http://localhost:8888/notebooks/commodities-test-informal.ipynb)
 - Run each of the cells in order from top to bottom, which in the final cell will test the specified item from the test data against the NER model
 
+## Conducting an informal NER model test
+- Click the `commodities-test-formal.ipynb` file to open this kernel on [http://localhost:8888/notebooks/commodities-test-formal.ipynb](http://localhost:8888/notebooks/commodities-test-formal.ipynb)
+- Run each of the cells in order from top to bottom, which in the final cell will test all items in the test data against the NER model and display a confusion matrix
+
 
 ## Sample file extracts
 
@@ -153,8 +157,11 @@ aa1e07d2-0a30-41cd-b146-b730ea5467ad|||At vero eos et accusamus…||Et harum qui
   - [How to Train a spaCy NER model (Named Entity Recognition for DH 04 | Part 03)](https://www.youtube.com/watch?v=7Z1imsp6g10) (04 Dec 2020)
   - [How to Convert spaCy 2x Training Data to 3x (Named Entity Recognition in spaCy Tutorials)](https://www.youtube.com/watch?v=TKoPva69_6E) (12 Apr 2021)
   - [How to Create a Config.cfg File in spaCy 3x for Named Entity Recognition (NER)](https://www.youtube.com/watch?v=l67PXnhu0ig) (14 Apr 2021)
-  - [How to Structure an Informal NER Test with spaCy 3 (Named Entity Recognition Tutorials)](https://www.youtube.com/watch?v=SJeDvHKHN_k) (16 May 2021)
   - [How to Train an NER Model in spaCy 3x](https://www.youtube.com/watch?v=PJZzBp6em-Q) (07 May 2021)
+  - [How to Structure an Informal NER Test with spaCy 3 (Named Entity Recognition Tutorials)](https://www.youtube.com/watch?v=SJeDvHKHN_k) (16 May 2021)
+  - [How to Structure a Formal Test with Confusion Matrix in spaCy 3 for NER Models (NER for DH)](https://www.youtube.com/watch?v=k1FtpADlusE) (23 May 2021)
 - [GitHub: wjbmattingly (William Mattingly)](https://github.com/wjbmattingly)
+  - [spacy_tutorials_3x/02_02_formal_test.ipynb](https://github.com/wjbmattingly/spacy_tutorials_3x/blob/main/02_02_formal_test.ipynb)
   - [spacy_3_ner_tutorials](https://github.com/wjbmattingly/spacy_3_ner_tutorials)
   - [holocaust_ner_lessons](https://github.com/wjbmattingly/holocaust_ner_lessons)
+- [Medium: Confusion Matrix Visualization for SpaCy NER by Dulaj Rajitha](https://dulaj.medium.com/confusion-matrix-visualization-for-spacy-ner-9e9d99120ee9) (25 Jul 2019)
