@@ -95,7 +95,7 @@ It will also create an `output` root-level directory which contains `model-best`
 - Click the `commodities-test-informal.ipynb` file to open this kernel on [http://localhost:8888/notebooks/commodities-test-informal.ipynb](http://localhost:8888/notebooks/commodities-test-informal.ipynb)
 - Run each of the cells in order from top to bottom, which in the final cell will test the specified item from the test data against the NER model
 
-## Conducting an informal NER model test
+## Conducting a formal NER model test
 - Click the `commodities-test-formal.ipynb` file to open this kernel on [http://localhost:8888/notebooks/commodities-test-formal.ipynb](http://localhost:8888/notebooks/commodities-test-formal.ipynb)
 - Run each of the cells in order from top to bottom, which in the final cell will test all items in the test data against the NER model and display a confusion matrix
 
