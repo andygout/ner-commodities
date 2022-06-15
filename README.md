@@ -103,7 +103,7 @@ It will also create an `output` root-level directory which contains `model-best`
 ## Sample file extracts
 
 #### `data/commodities.json`
-- My first attempt included 40 distinct commodities.
+- An array of distinct commodities (each both capitalised and lowercased) - more detail can be found in https://github.com/andygout/ner-commodities/wiki/Commodities-data.
 
 ```json
 [
