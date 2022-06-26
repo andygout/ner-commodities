@@ -1,5 +1,5 @@
 .DS_Store
 .ipynb_checkpoints/**
-commodities_ner/**
+commodities_ner_rules/**
 data/**
 output/**

@@ -7,12 +7,17 @@ It runs on [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedoc
 
 ## Setup
 - Clone this repo and make a root-level directory called `data` that includes the folllowing files:
-  - [`commodities.json`](#datacommoditiesjson)
+  - [`commodities-patterns.json`](#datacommodities-patternsjson)
   - [`ft-articles-training.txt`](#dataft-articles-trainingtxt)
   - [`ft-articles-validation.txt`](#dataft-articles-validationtxt)
   - [`ft-articles-test.txt`](#dataft-articles-testtxt)
 - Install the Jupyter Notebook App by downloading [Anaconda Distribution](https://www.anaconda.com/products/distribution), which is a common scientific python distribution (and which also includes scientific python packages)
 - Run (from the root-level of this repo): `$ jupyter notebook` - this wil open the notebook on [http://localhost:8888/tree](http://localhost:8888/tree)
+
+
+## Creating rules
+- Click the `create-rules.ipynb` file to open this kernel on [http://localhost:8888/notebooks/create-rules.ipynb](http://localhost:8888/notebooks/create-rules.ipynb)
+- Run each of the cells in order from top to bottom, which will create the `commodities_ner_rules` directory that is employed by subsequent kernels
 
 
 ## Creating entities per article dataset
@@ -33,6 +38,12 @@ It runs on [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedoc
 - Run each of the cells in order from top to bottom, which will create the following files in the `data` directory:
   - `validation_data.json` (used by spaCy v2)
   - `validation_data.spacy` (used by spaCy v3)
+
+
+## Creating test dataset
+- Click the `create-test-data.ipynb` file to open this kernel on [http://localhost:8888/notebooks/create-test-data.ipynb](http://localhost:8888/notebooks/create-test-data.ipynb)
+- Run each of the cells in order from top to bottom, which will create the following file in the `data` directory:
+  - `test_data.json`: body text segments that have not been used to train/validate the NER model that can be used to test the NER model
 
 
 ## Creating a spaCy NER model
@@ -91,12 +102,6 @@ It will also create an `output` root-level directory which contains `model-best`
 ```
 
 
-## Creating test dataset
-- Click the `create-test-data.ipynb` file to open this kernel on [http://localhost:8888/notebooks/create-test-data.ipynb](http://localhost:8888/notebooks/create-test-data.ipynb)
-- Run each of the cells in order from top to bottom, which will create the following file in the `data` directory:
-  - `test_data.json`: body text segments that have not been used to train/validate the NER model that can be used to test the NER model
-
-
 ## Conducting an informal NER model test
 - Click the `test-informal.ipynb` file to open this kernel on [http://localhost:8888/notebooks/test-informal.ipynb](http://localhost:8888/notebooks/test-informal.ipynb)
 - Run each of the cells in order from top to bottom, which in the final cell will test the specified item from the test data against the NER model
@@ -108,20 +113,33 @@ It will also create an `output` root-level directory which contains `model-best`
 
 ## Sample file extracts
 
-#### `data/commodities.json`
+#### `data/commodities-patterns.json`
 - An array of distinct commodities (each both capitalised and lowercased) - more detail can be found in https://github.com/andygout/ner-commodities/wiki/Commodities-data.
 
 ```json
 [
-	"aluminium",
-	"Aluminium",
-	"amber",
-	"Amber",
+  [
+    { "LOWER": "aluminium", "POS": "NOUN" }
+  ],
+  [
+    { "LOWER": "cattle", "POS": "NOUN" }
+  ],
 	…
-	"wool",
-	"Wool",
-	"zinc",
-	"Zinc"
+  [
+    { "LOWER": "natural", "POS": "ADJ" },
+    { "LOWER": "gas", "POS": "NOUN" }
+  ],
+  [
+    { "LOWER": "palm", "POS": "NOUN" },
+    { "LOWER": "oil", "POS": "NOUN" }
+  ],
+  …
+  [
+    { "LOWER": "wheat", "POS": "NOUN" }
+  ],
+  [
+    { "LOWER": "zinc", "POS": "NOUN" }
+  ]
 ]
 ```
 
@@ -150,7 +168,7 @@ aa1e07d2-0a30-41cd-b146-b730ea5467ad|||At vero eos et accusamus…||Et harum qui
 
 #### `data/ft-articles-test.txt`
 - This file follows the same format as used for [`ft-articles-training.txt`](#dataft-articles-trainingtxt)
-- The file includes **500+ unique articles**: 25 articles for each of the 20 commodities, plus some additional articles with commodities not included in `commodities.json` (to see if the model has learned to identify other commodities), and others with occurrences of homonyms of the name of the commodity to test for false positives, e.g.
+- The file includes **500+ unique articles**: 25 articles for each of the 20 commodities, plus some additional articles with commodities not included in `commodities-patterns.json` (to see if the model has learned to identify other commodities), and others with occurrences of homonyms of the name of the commodity to test for false positives, e.g.
   - cattle -> Cattle's PLC: a British consumer finance company
   - gold -> Yamana Gold: Canadian gold mine and established producer
   - rice -> Condoleezza Rice: Former United States Secretary of State
@@ -162,7 +180,8 @@ aa1e07d2-0a30-41cd-b146-b730ea5467ad|||At vero eos et accusamus…||Et harum qui
 	- [2. Installation](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/install.html)
 	- [3. Running the Jupyter Nohttps://www.youtube.com/watch?v=PJZzBp6em-Qtebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html)
 - [Anaconda Distribution - Download](https://www.anaconda.com/products/distribution)
-- [spaCy](https://spacy.io/)
+- [spaCy](https://spacy.io)
+  - [Rule-based matching](https://spacy.io/usage/rule-based-matching)
 - [YouTube: Python Tutorials for Digital Humanities by Dr William Mattingly](https://www.youtube.com/c/PythonTutorialsforDigitalHumanities)
   - [How to Use spaCy's EntityRuler (Named Entity Recognition for DH 04 | Part 01)](https://www.youtube.com/watch?v=wpyCzodvO3A) (30 Nov 2020)
   - [How to Use spaCy to Create an NER training set (Named Entity Recognition for DH 04 | Part 02)](https://www.youtube.com/watch?v=YBRF7tq1V-Q) (02 Dec 2020) - creates a training set of 2,213 segments that include entities (6-10k sentences, which is deemed a pretty good size)
