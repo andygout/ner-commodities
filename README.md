@@ -114,7 +114,7 @@ It will also create an `output` root-level directory which contains `model-best`
 ## Sample file extracts
 
 #### `data/commodities-patterns.json`
-- An array of distinct commodities (each both capitalised and lowercased) - more detail can be found in https://github.com/andygout/ner-commodities/wiki/Commodities-data.
+- An array of distinct commodities (each both capitalised and lowercased) - more detail can be found in https://github.com/andygout/ner-commodities/wiki/Commodities-patterns-data
 
 ```json
 [
