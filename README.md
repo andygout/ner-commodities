@@ -114,7 +114,7 @@ It will also create an `output` root-level directory which contains `model-best`
 ## Sample file extracts
 
 #### `data/commodities-patterns.json`
-- An array of distinct commodities (each both capitalised and lowercased) - more detail can be found in https://github.com/andygout/ner-commodities/wiki/Commodities-patterns-data
+- An array of distinct commodities (each both capitalised and lowercased) - more detail can be found in the [Commodities patterns data wiki]( https://github.com/andygout/ner-commodities/wiki/Commodities-patterns-data)
 
 ```json
 [
@@ -149,7 +149,20 @@ It will also create an `output` root-level directory which contains `model-best`
 - Each line should contain an article, starting with its UUID, followed by triple pipes, followed by the body text split into segments delineated by double pipes (I chose to delineate segments based on where line breaks occurred)
 - The file should not end with an empty newline
 - The file includes **2,000 unique articles**: 100 articles for each of the 20 commodities (though each article may potentially mention multiple commodities)
-- I chose articles that mentioned the commodity in contexts that would clearly define it as such, e.g. "aluminium traders", "US producers of corn-based ethanol", "cobalt and molybdenum futures contracts", etc.
+- I chose articles that mentioned the commodities in contexts that would emphasise it as such, e.g. "aluminium traders", "the price of corn", "producers of cotton", "wheat futures contracts", etc., which is a very manual process as it requires avoiding homonyms, mentions of the commodity in the wrong sort of context, and metaphorical usage, etc. (examples below)
+- The UUIDs of articles used for this file can be seen in the [FT articles training set wiki](https://github.com/andygout/ner-commodities/wiki/FT-articles-training-set)
+
+**Homonyms:**
+  - cattle -> Cattle's PLC: a British consumer finance company
+  - gold -> Yamana Gold: Canadian gold mine and established producer
+  - rice -> Condoleezza Rice: Former United States Secretary of State
+
+**Undesired contexts:**
+  - articles about coffee shop culture
+  - rice pudding recipes
+
+**Metaphorical usage:**
+  - "…about as inviting as a bowl of cold rice pudding…"
 
 ```
 1e852438-161d-4095-90f8-fccb810b4efe|||Lorem ipsum dolor sit amet…||Ut enim ad minim veniam…||Duis aute irure dolor.
@@ -163,15 +176,14 @@ aa1e07d2-0a30-41cd-b146-b730ea5467ad|||At vero eos et accusamus…||Et harum qui
 #### `data/ft-articles-validation.txt`
 - This file follows the same format as used for [`ft-articles-training.txt`](#dataft-articles-trainingtxt)
 - The file includes **500 unique articles**: 25 articles for each of the 20 commodities
+- The UUIDs of articles used for this file can be seen in the [FT articles validation set wiki](https://github.com/andygout/ner-commodities/wiki/FT-articles-validation-set)
 
 ---
 
 #### `data/ft-articles-test.txt`
 - This file follows the same format as used for [`ft-articles-training.txt`](#dataft-articles-trainingtxt)
-- The file includes **500+ unique articles**: 25 articles for each of the 20 commodities, plus some additional articles with commodities not included in `commodities-patterns.json` (to see if the model has learned to identify other commodities), and others with occurrences of homonyms of the name of the commodity to test for false positives, e.g.
-  - cattle -> Cattle's PLC: a British consumer finance company
-  - gold -> Yamana Gold: Canadian gold mine and established producer
-  - rice -> Condoleezza Rice: Former United States Secretary of State
+- The file includes **500 unique articles**: 25 articles for each of the 20 commodities
+- The UUIDs of articles used for this file can be seen in the [FT articles test set wiki](https://github.com/andygout/ner-commodities/wiki/FT-articles-test-set)
 
 
 ## References
