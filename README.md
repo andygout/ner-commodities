@@ -9,7 +9,7 @@ It runs on [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedoc
 - Clone this repo and make a root-level directory called `data` that includes the folllowing files:
   - [`commodities-patterns.json`](#datacommodities-patternsjson)
   - [`ft-articles-training.txt`](#dataft-articles-trainingtxt)
-  - [`ft-articles-validation.txt`](#dataft-articles-validationtxt)
+  - [`ft-articles-evaluation.txt`](#dataft-articles-evaluationtxt)
   - [`ft-articles-test.txt`](#dataft-articles-testtxt)
 - Install the Jupyter Notebook App by downloading [Anaconda Distribution](https://www.anaconda.com/products/distribution), which is a common scientific python distribution (and which also includes scientific python packages)
 - Run (from the root-level of this repo): `$ jupyter notebook` - this wil open the notebook on [http://localhost:8888/tree](http://localhost:8888/tree)
@@ -33,11 +33,11 @@ It runs on [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedoc
   - `training_data.spacy` (used by spaCy v3)
 
 
-## Creating validation datasets
-- Click the `create-validation-data.ipynb` file to open this kernel on [http://localhost:8888/notebooks/create-validation-data.ipynb](http://localhost:8888/notebooks/create-validation-data.ipynb)
+## Creating evaluation datasets
+- Click the `create-evaluation-data.ipynb` file to open this kernel on [http://localhost:8888/notebooks/create-evaluation-data.ipynb](http://localhost:8888/notebooks/create-evaluation-data.ipynb)
 - Run each of the cells in order from top to bottom, which will create the following files in the `data` directory:
-  - `validation_data.json` (used by spaCy v2)
-  - `validation_data.spacy` (used by spaCy v3)
+  - `evaluation_data.json` (used by spaCy v2)
+  - `evaluation_data.spacy` (used by spaCy v3)
 
 
 ## Creating test dataset
@@ -54,7 +54,7 @@ It runs on [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedoc
   - **Optimize for:** efficiency
 - Paste the contents into a root-level file called `base_config.cfg` and update the `[paths]` variables to point to the corresponding spaCy format datasets:
   - `train = null` -> `train = "/data/training_data.spacy"`
-  - `dev = null` -> `dev = "/data/validation_data.spacy"`
+  - `dev = null` -> `dev = "/data/evaluation_data.spacy"`
 - Run `$ python -m spacy init fill-config base_config.cfg config.cfg` to create from `base_config.cfg` a properly formatted `config.cfg` file that will be used to train the NER model
 - Run `$ python -m spacy train config.cfg --output ./output` to use the training data to create a spaCy NER model, and which will display output that looks like:
 ```
@@ -173,10 +173,10 @@ aa1e07d2-0a30-41cd-b146-b730ea5467ad|||At vero eos et accusamus…||Et harum qui
 
 ---
 
-#### `data/ft-articles-validation.txt`
+#### `data/ft-articles-evaluation.txt`
 - This file follows the same format as used for [`ft-articles-training.txt`](#dataft-articles-trainingtxt)
 - The file includes **500 unique articles**: 25 articles for each of the 20 commodities
-- The UUIDs of articles used for this file can be seen in the [FT articles validation set wiki](https://github.com/andygout/ner-commodities/wiki/FT-articles-validation-set)
+- The UUIDs of articles used for this file can be seen in the [FT articles evaluation set wiki](https://github.com/andygout/ner-commodities/wiki/FT-articles-evaluation-set)
 
 ---
 
