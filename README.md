@@ -7,7 +7,6 @@ It runs on [Jupyter Notebook](https://jupyter-notebook-beginner-guide.readthedoc
 
 ## Setup
 - Clone this repo and make a root-level directory called `data` that includes the folllowing files:
-  - [`commodities-patterns.json`](#datacommodities-patternsjson)
   - [`ft-articles-training.txt`](#dataft-articles-trainingtxt)
   - [`ft-articles-evaluation.txt`](#dataft-articles-evaluationtxt)
   - [`ft-articles-test.txt`](#dataft-articles-testtxt)
@@ -112,38 +111,6 @@ It will also create an `output` root-level directory which contains `model-best`
 
 
 ## Sample file extracts
-
-#### `data/commodities-patterns.json`
-- An array of distinct commodities (each both capitalised and lowercased) - more detail can be found in the [Commodities patterns data wiki]( https://github.com/andygout/ner-commodities/wiki/Commodities-patterns-data)
-
-```json
-[
-  [
-    { "LOWER": "aluminium", "POS": "NOUN" }
-  ],
-  [
-    { "LOWER": "cattle", "POS": "NOUN" }
-  ],
-	…
-  [
-    { "LOWER": "natural", "POS": "ADJ" },
-    { "LOWER": "gas", "POS": "NOUN" }
-  ],
-  [
-    { "LOWER": "palm", "POS": "NOUN" },
-    { "LOWER": "oil", "POS": "NOUN" }
-  ],
-  …
-  [
-    { "LOWER": "wheat", "POS": "NOUN" }
-  ],
-  [
-    { "LOWER": "zinc", "POS": "NOUN" }
-  ]
-]
-```
-
----
 
 #### `data/ft-articles-training.txt`
 - Each line should contain an article, starting with its UUID, followed by triple pipes, followed by the body text split into segments delineated by double pipes (I chose to delineate segments based on where line breaks occurred)

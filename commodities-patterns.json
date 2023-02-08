@@ -1,0 +1,66 @@
+[
+	[
+		{ "LOWER": "aluminium", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "cattle", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "cobalt", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "cocoa", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "coffee", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "copper", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "corn", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "cotton", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "crude", "POS": "ADJ" },
+		{ "LOWER": "oil", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "gold", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "iron", "POS": "NOUN" },
+		{ "LOWER": "ore", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "lithium", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "natural", "POS": "ADJ" },
+		{ "LOWER": "gas", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "palm", "POS": "NOUN" },
+		{ "LOWER": "oil", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "poultry", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "rice", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "silver", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "sugar", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "wheat", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "zinc", "POS": "NOUN" }
+	]
+]
