@@ -1,9 +1,77 @@
 [
 	[
+		{ "LOWER": "alumina", "POS": "NOUN" }
+	],
+	[
 		{ "LOWER": "aluminium", "POS": "NOUN" }
 	],
 	[
+		{ "LOWER": "amber", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "barley", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "bauxite", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "beef", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "biodiesel", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "biofuel", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "biofuel", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "brent", "POS": "NOUN" },
+		{ "LOWER": "crude", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "brent", "POS": "PROPN" },
+		{ "LOWER": "crude", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "brent", "POS": "NOUN" },
+		{ "LOWER": "crude", "POS": "ADJ" },
+		{ "LOWER": "oil", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "brent", "POS": "PROPN" },
+		{ "LOWER": "crude", "POS": "ADJ" },
+		{ "LOWER": "oil", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "brent", "POS": "NOUN" },
+		{ "LOWER": "oil", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "brent", "POS": "PROPN" },
+		{ "LOWER": "oil", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "cement", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "cereal", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "cereals", "POS": "NOUN" }
+	],
+	[
 		{ "LOWER": "cattle", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "chicken", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "chickens", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "coal", "POS": "NOUN" }
 	],
 	[
 		{ "LOWER": "cobalt", "POS": "NOUN" }
@@ -24,41 +92,202 @@
 		{ "LOWER": "cotton", "POS": "NOUN" }
 	],
 	[
+		{ "LOWER": "crude", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "crude", "POS": "ADJ" }
+	],
+	[
 		{ "LOWER": "crude", "POS": "ADJ" },
 		{ "LOWER": "oil", "POS": "NOUN" }
 	],
 	[
+		{ "LOWER": "diesel", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "egg", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "eggs", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "ethanol", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "fish", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "gas", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "gasoline", "POS": "NOUN" }
+	],
+	[
 		{ "LOWER": "gold", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "grain", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "grains", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "heating", "POS": "NOUN" },
+		{ "LOWER": "oil", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "hogs", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "iron", "POS": "NOUN" }
 	],
 	[
 		{ "LOWER": "iron", "POS": "NOUN" },
 		{ "LOWER": "ore", "POS": "NOUN" }
 	],
 	[
+		{ "LOWER": "kerosene", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "lead", "POS": "NOUN" }
+	],
+	[
 		{ "LOWER": "lithium", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "livestock", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "live-stock", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "maize", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "manganese", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "mica", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "milk", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "moly", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "molybdenum", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "mutton", "POS": "NOUN" }
 	],
 	[
 		{ "LOWER": "natural", "POS": "ADJ" },
 		{ "LOWER": "gas", "POS": "NOUN" }
 	],
 	[
+		{ "LOWER": "nickel", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "oats", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "oil", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "oilseed", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "oilseeds", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "palladium", "POS": "NOUN" }
+	],
+	[
 		{ "LOWER": "palm", "POS": "NOUN" },
 		{ "LOWER": "oil", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "petrol", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "petroleum", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "platinum", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "pork", "POS": "NOUN" }
 	],
 	[
 		{ "LOWER": "poultry", "POS": "NOUN" }
 	],
 	[
+		{ "LOWER": "propane", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "rapeseed", "POS": "NOUN" }
+	],
+	[
 		{ "LOWER": "rice", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "rubber", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "rye", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "silicon", "POS": "NOUN" }
 	],
 	[
 		{ "LOWER": "silver", "POS": "NOUN" }
 	],
 	[
+		{ "LOWER": "sorghum", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "soybeans", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "soy", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "soya", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "soyabeans", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "soya", "POS": "NOUN" },
+		{ "LOWER": "beans", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "steel", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "sucrose", "POS": "NOUN" }
+	],
+	[
 		{ "LOWER": "sugar", "POS": "NOUN" }
 	],
 	[
+		{ "LOWER": "tea", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "tin", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "tungsten", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "uranium", "POS": "NOUN" }
+	],
+	[
 		{ "LOWER": "wheat", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "wool", "POS": "NOUN" }
 	],
 	[
 		{ "LOWER": "zinc", "POS": "NOUN" }
