@@ -6,6 +6,9 @@
 		{ "LOWER": "aluminium", "POS": "NOUN" }
 	],
 	[
+		{ "LOWER": "aluminum", "POS": "NOUN" }
+	],
+	[
 		{ "LOWER": "amber", "POS": "NOUN" }
 	],
 	[
