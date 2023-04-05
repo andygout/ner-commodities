@@ -112,6 +112,28 @@ It will also create an `output` root-level directory which contains `model-best`
 
 ## Sample file extracts
 
+The sample files were sourced by searching for FT content whose body text included one of the 20 commodities:
+- aluminium
+- cattle
+- cobalt
+- cocoa
+- coffee
+- copper
+- corn
+- cotton
+- crude oil
+- gold
+- iron ore
+- lithium
+- natural gas
+- palm oil
+- poultry
+- rice
+- silver
+- sugar
+- wheat
+- zinc
+
 #### `data/ft-articles-training.txt`
 - Each line should contain an article, starting with its UUID, followed by triple pipes, followed by the body text split into segments delineated by double pipes (I chose to delineate segments based on where line breaks occurred)
 - The file should not end with an empty newline
