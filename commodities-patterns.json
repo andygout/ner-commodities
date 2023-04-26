@@ -230,11 +230,17 @@
 		{ "LOWER": "soya", "POS": "NOUN" }
 	],
 	[
+		{ "LOWER": "soyabean", "POS": "NOUN" }
+	],
+	[
 		{ "LOWER": "soyabeans", "POS": "NOUN" }
 	],
 	[
 		{ "LOWER": "soya", "POS": "NOUN" },
 		{ "LOWER": "beans", "POS": "NOUN" }
+	],
+	[
+		{ "LOWER": "soybean", "POS": "NOUN" }
 	],
 	[
 		{ "LOWER": "soybeans", "POS": "NOUN" }
